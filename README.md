@@ -2,7 +2,9 @@
 
 An Ansible Role that installs [GHOSTS Server](https://github.com/cmu-sei/GHOSTS) on linux.
 
-Based on the 8.2 version information
+This role is a fork of [frack113/ludus_ghosts_server](https://github.com/frack113/ludus_ghosts_server); however, containers pulled in `docker-compose.yml` are pulling the latest build which has breaking changes. This modifies the Compose file to the `v8.3.1` tag.
+
+As a consequence, you'll have to manually install this role (using `ludus ansible role add -d`) and adjust the range config a little.
 
 ## Requirements
 
@@ -58,7 +60,7 @@ ludus:
     cpus: 4
     linux: true
     roles:
-      - frack113.ludus_ghosts_server
+      - ludus_ghosts_server
 ```
 
 ## License
@@ -68,4 +70,4 @@ GPLv3
 
 ## Author Information
 
-This role was created by [frack113](https://github.com/frack113), for [Ludus](https://ludus.cloud/).
+This role was created by [@randy-halim](https://github.com/randy-halim), for [Ludus](https://ludus.cloud/).
