@@ -1,3 +1,7 @@
+# Repository Archived
+
+This was fixed upstream with [v1.4.0](https://github.com/frack113/ludus_ghosts_server/releases/tag/v1.4.0) and is a much more comprehensive fix, therefore archiving.
+
 # Ansible Role: Ghosts Server
 
 An Ansible Role that installs [GHOSTS Server](https://github.com/cmu-sei/GHOSTS) on linux.
